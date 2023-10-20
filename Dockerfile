@@ -1,5 +1,5 @@
 #build container
-FROM mcr.microsoft.com/dotnet/sdk:5.0.400-focal as build
+FROM mcr.microsoft.com/dotnet/sdk:5.0.408-focal as build
 
 WORKDIR /build
 COPY . .
