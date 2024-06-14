@@ -14,4 +14,8 @@ WORKDIR /app
 
 EXPOSE 5000
 
+# Mend traceability labels
+LABEL io.mend.image.dockerfile.path=master/Dockerfile
+LABEL org.opencontainers.image.source=https://github.com/JoshRMendDemo/test-net-remediate
+
 ENTRYPOINT ["dotnet", "Conduit.dll"]
